@@ -10,7 +10,7 @@ $(document).ready(function(){
         else{
             $('.clearfix li').removeClass('current-menu-item');
             $(this).addClass('current-menu-item');
-            /*si elimino $(this) y pongo la variable 'esteElemento' peta.
+            /*si elimino $(this) y pongo la variable 'esteElemento' ya no funciona la función.
             Sólo puedo usar la variable donde la he cambiado, en los otros sitios me peta sin sentido.
             Yo había puesto:
                 else{
