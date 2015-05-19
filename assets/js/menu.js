@@ -4,13 +4,15 @@ $(document).ready(function(){
 
     $('.clearfix li').click(function(evento){
         evento.preventDefault();
+
         if(esteElemento.hasClass('current-menu-item')){
             esteElemento.removeClass('current-menu-item');
         }
+
         else{
             $('.clearfix li').removeClass('current-menu-item');
             $(this).addClass('current-menu-item');
-            /*si elimino $(this) y pongo la variable 'esteElemento' ya no funciona la función.
+            /*si elimino $(this) y pongo variable 'esteElemento' ya no funciona la función.
             Sólo puedo usar la variable donde la he cambiado, en los otros sitios me peta sin sentido.
             Yo había puesto:
                 else{
@@ -19,9 +21,8 @@ $(document).ready(function(){
                 }  */
         }
     });
-
-
 });
+
 
 //Javascript para el menú mobil
 $(document).ready(function(){
